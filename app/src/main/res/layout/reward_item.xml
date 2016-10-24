@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="16dp"
+    android:layout_marginBottom="8dp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:layout_width="640px"
+            android:layout_height="640px"
+            android:id="@+id/reward_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reward_name"
+            android:text="Event"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/reward_image"
+            android:layout_alignLeft="@id/reward_image"
+            android:lines="2"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
